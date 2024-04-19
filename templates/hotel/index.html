@@ -1,0 +1,180 @@
+
+{% extends 'partials/base.html' %}
+{% load static %}
+{% block content %}
+        <!-- Banner -->
+        <div class="search_container_block main_search_block" data-background-image="{% static 'images/home_section_1.jpg' %}">
+            <div class="main_inner_search_block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Book Unique Experiences</h2>
+                            <h4>Discover top rated hotels, shops and restaurants around the world</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="fullwidth_block margin-top-65 padding-top-75 padding-bottom-70" data-background-color="#f9f9f9">
+            <div class="container">
+                <div class="row slick_carousel_slider">
+                    <div class="col-md-12">
+                        <h3 class="headline_part centered margin-bottom-45">Our Popular Tours <span>Explore the greates places in the city</span> </h3>
+                    </div>
+
+                    <div class="row">
+                       
+                                {% for h in hotel %}
+                                    <div class="col-lg-4">
+                                        <a href="{% url 'hotel:detail' h.slug %}" class="utf_listing_item-container compact">
+                                            <div class="utf_listing_item"> <img src="{{h.image.url}}" alt=""> 
+                                                <!-- <span class="tag"> <i class="im im-icon-Chef-Hat"></i> Restaurant </span>  -->
+                                                <!-- <span class="featured_tag">Featured</span> -->
+                                                <span class="utf_open_now">Open Now</span>
+                                                <div class="utf_listing_item_content">
+                                                    <div class="utf_listing_prige_block">
+                                                        <!-- <span class="utf_meta_listing_price"><i class="fa fa-tag"></i> $25 - $55</span> -->
+                                                        <!-- <span class="utp_approve_item"><i class="utf_approve_listing"></i></span> -->
+                                                    </div>
+                                                    <h3>{{h.name|truncatechars:20}}</h3>
+                                                    <span><i class="fas fa-location-arrow"></i> {{h.address}}</span>
+                                                    <span><i class="fas fa-phone"></i> {{h.mobile}}</span>
+                                                </div>
+                                            </div>
+                                            <div class="utf_star_rating_section" data-rating="{{h.average_rating}}">
+                                                
+                                                {% if h.average_rating == None %}
+                                                <div class="utf_counter_star_rating">No Rating Yet</div>
+                                                {% else %}
+                                                <div class="utf_counter_star_rating">{{h.average_rating}}/5 ({{h.rating_count}} reviews) </div>
+                                                {% endif %}
+                                                    
+                                                <span class="utf_view_count"> {{h.views}}</span>
+                                                <span class="like-icon add-to-bookmark-{{h.id}}" data-hotel="{{h.id}}" id="add-to-bookmark"></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                {% endfor %}
+
+                               
+                            
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="utf_testimonial_part fullwidth_block padding-top-75 padding-bottom-75">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h3 class="headline_part centered"> What Say Our Customers <span class="margin-top-15"></span> </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="fullwidth_carousel_container_block margin-top-20">
+                <div class="utf_testimonial_carousel testimonials">
+                    <div class="utf_carousel_review_part">
+                        <div class="utf_testimonial_box">
+                            <div class="testimonial">Booking my hotel through this website was a breeze! I found exactly what I needed quickly, and the whole process was smooth from start to finish. The pictures and descriptions were accurate, 
+                                and the booking confirmation came through promptly. Overall, a fantastic experience!</div>
+                        </div>
+                        <div class="utf_testimonial_author"> <img src="{% static 'images/happy-client-01.jpg' %}" alt="">
+                            <h4>Dkavindu <span>Web Developer</span></h4>
+                        </div>
+                    </div>
+                    <div class="utf_carousel_review_part">
+                        <div class="utf_testimonial_box">
+                            <div class="testimonial">Booking my hotel through this website was a breeze! I found exactly what I needed quickly, and the whole process was smooth from start to finish. The pictures and descriptions were accurate, 
+                                and the booking confirmation came through promptly. Overall, a fantastic experience!</div>
+                        </div>
+                        <div class="utf_testimonial_author"> <img src="{% static 'images/happy-client-02.jpg' %}" alt="">
+                            <h4>Dkavindu <span>Web Developer</span></h4>
+                        </div>
+                    </div>
+                    <div class="utf_carousel_review_part">
+                        <div class="utf_testimonial_box">
+                            <div class="testimonial">Booking my hotel through this website was a breeze! I found exactly what I needed quickly, and the whole process was smooth from start to finish. The pictures and descriptions were accurate, 
+                                and the booking confirmation came through promptly. Overall, a fantastic experience!</div>
+                        </div>
+                        <div class="utf_testimonial_author"> <img src="{% static 'images/happy-client-03.jpg' %}" alt="">
+                            <h4>Dkavindu <span>Project Manager</span></h4>
+                        </div>
+                    </div>
+                    <div class="utf_carousel_review_part">
+                        <div class="utf_testimonial_box">
+                            <div class="testimonial">Booking my hotel through this website was a breeze! I found exactly what I needed quickly, and the whole process was smooth from start to finish. The pictures and descriptions were accurate, 
+                                and the booking confirmation came through promptly. Overall, a fantastic experience!</div>
+                        </div>
+                        <div class="utf_testimonial_author"> <img src="{% static 'images/happy-client-01.jpg' %}" alt="">
+                            <h4>Dkavindu <span>Web Developer</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="fullwidth_block margin-bottom-0 padding-top-50 padding-bottom-50" data-background-color="linear-gradient(to bottom, #f9f9f9 0%, rgba(255, 255, 255, 1))">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="companie-logo-slick-carousel utf_dots_nav">
+                            <div class="item">
+                                <img src="{% static 'images/brand_logo_01.png' %}" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'images/brand_logo_02.png' %}" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'images/brand_logo_03.png' %}" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'images/brand_logo_04.png' %}" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'images/brand_logo_05.png' %}" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'images/brand_logo_06.png' %}" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'images/brand_logo_07.png' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="utf_cta_area_item utf_cta_area2_block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="utf_subscribe_block clearfix">
+                            <div class="col-md-8 col-sm-7">
+                                <div class="section-heading">
+                                    <h2 class="utf_sec_title_item utf_sec_title_item2">Subscribe to Newsletter!</h2>
+                                    <p class="utf_sec_meta">
+                                        Subscribe to get latest updates and information.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-5">
+                                <div class="contact-form-action">
+                                    <form method="post">
+                                        <span class="la la-envelope-o"></span>
+                                        <input class="form-control" type="email" placeholder="Enter your email" required="">
+                                        <button class="utf_theme_btn" type="submit">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+{% endblock content %}
+    

@@ -56,11 +56,12 @@
                         <nav id="navigation" class="style_one">
                             <ul id="responsive">
                                 <li><a class="current" href="{% url 'hotel:index' %}">Home</a></li>
-                                <li><a href="#">Account</a>
-                                    <ul>
-                                        <li><a href="{% url 'dashboard:dashboard' %}">Dashboard</a></li>
-                                    </ul>
-                                </li>
+				{% if request.user.is_authenticated %}
+	                                <li><a href="#">Account</a>
+	                                    <ul>
+	                                        <li><a href="{% url 'dashboard:dashboard' %}">Dashboard</a></li>
+	                                    </ul>
+	                                </li>
                             </ul>
                         </nav>
                         <div class="clearfix"></div>
@@ -72,7 +73,7 @@
                                 
                                 <a href="{% url 'hotel:selected_rooms' %}" class="button border sign-in "><i class="fas fa-bed"></i><span class="room-count">{{ total_selected_items }}</span></a>     
                                 <a href="{% url 'userauths:sign-out' %}" class="button border with-icon"><i class="bi bi-power"></i>Sign Out</a>
-                                <a href="{% url 'dashboard:dashboard' %}" class="button border sign-in "><i class="bi bi-grid"></i>Dashboard</a>
+                                <!--<a href="{% url 'dashboard:dashboard' %}" class="button border sign-in "><i class="bi bi-grid"></i>Dashboard</a>-->
                             {% else %}
                                 <a href="{% url 'hotel:selected_rooms' %}" class="button border sign-in "><i class="fas fa-bed"></i><span class="room-count">{{ total_selected_items }}</span></a> 
                                 <a href="{% url 'userauths:sign-in' %}" class="button border sign-in "><i class="fa fa-sign-in"></i> Sign In</a>

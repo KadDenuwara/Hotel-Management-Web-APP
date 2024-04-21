@@ -1,156 +1,80 @@
-# Soul Base Studio Booking App
+# Welcome to Our Django Hotel Management System!
 
-Welcome to Soul Base Pilates Studio! This app will allow users to book classes for this pilates/dance studio. The classes are run by my sister, which is where the inspiration came from for this app. This project was created using Django for my very first time. The site remains simple, yet functional and contains great user experience with easy navigation. Enjoy! 
-![Am I Responsive view of app](static/images/readme/am-i-responsive.png)
+Welcome to our comprehensive Django Hotel Management System! We're thrilled to have you on board. Whether you're a hotel manager, staff member, or developer, this system is designed to streamline your operations and enhance guest experiences.
 
 # User Experience (UX)
 
-## User Stories:
-**Planning of user stories completed in Google sheets:
-[Google sheet](https://docs.google.com/spreadsheets/d/13gqPIhIq3JW8bj4yZG445GtfKLTm_jc08hKC8qQwt5g/edit?usp=sharing)
+## For Hotel Staff:
 
-- As a first time user I can navigate the site so that I can learn about the business.
-- As a first time user I can click on the business' social media links so that I can further research the business and connect.
-- As a first time user I want to be able to register for an account so that I can access the studio booking platform.
-- As a first time user I can send queries to the business so that I can find out more about them.
-- As a user I can book a class so that I can attend a class that suits my schedule.
-- As a user I can receive confirmation of a booking so that I know it was successfully booked.
-- As a user I can see the weekly class schedule so that I can find a class that suits my schedule.
-- As a returning visitor I can login to my account so that I can see my bookings.
-- As a returning visitor I can login to my account so that I can cancel a booked class.
-- As a returning visitor I can login to my account so that I can update my personal details.
-- As a site owner I can receive queries from users so that I can respond to potential clients.
-- As a site owner I can see class bookings so that I can plan accordingly for the scheduled classes.
+- Efficient Workflow Management
+  Hotel staff can navigate through daily tasks effortlessly with our user-friendly interface. From managing bookings to handling room assignments, each step of the workflow is streamlined for maximum efficiency.
 
-**User Stories within Projects on GitHub Repository:
-[Soul Base User Story Project](https://github.com/users/morganoleary/projects/4/views/1)
+- Personalized Guest Service
+  Our system empowers staff to provide personalized experiences for guests. With easy access to guest preferences, special requests, and feedback history, staff members can anticipate needs and exceed expectations.
+  
+- Insightful Analytics
+  Hotel managers gain valuable insights into performance metrics, occupancy rates, and revenue trends through comprehensive analytics tools. This data-driven approach enables informed decision-making and strategic planning.
 
-## Design:
-- The design was taken from the already created logo of Soul Base Pilates.
+## For Guests
 
-## Wireframes:
-[Figma wireframe](https://www.figma.com/file/XGDgyLpX0MTIs4UjGJEWSk/Studio-Booking-Site?type=design&node-id=0%3A1&mode=design&t=AFRhMGkel6QpeZO6-1)
-![Wireframes](static/images/readme/wireframes.png)
+- Seamless Booking Experience
+  Guests enjoy a hassle-free booking process with our intuitive reservation system. Whether booking online or through the front desk, the process is quick, secure, and tailored to individual preferences.
+  
+- Exceptional Service
+  From check-in to check-out, guests receive attentive and personalized service from hotel staff. Special requests and preferences are seamlessly integrated into the guest experience, ensuring a memorable stay.
+  
+- Convenient Access
+  Our system offers guests convenient access to essential information and services, such as room availability, amenities, and local attractions. With a user-friendly interface, guests can easily navigate and make the most of their stay.
 
-## ERD Diagram:
-[LucidChart ERD](https://lucid.app/lucidchart/e9b3c27f-07d4-4026-b261-0147bd63587b/edit?viewport_loc=-990%2C-136%2C2368%2C1186%2C0_0&invitationId=inv_e64b0370-8313-4ba3-ae26-527c2fb98352)
-![ERD Diagram](static/images/readme/erd.png)
 
-# Existing Features
 
-- Dynamic navbar for all device sizes, clear for users to see and easy to navigate:
-![Navbar](static/images/readme/navbar.png)
-![Navbar small screens](static/images/readme/navbar-small.png)
 
-- The home page displays clear information about the studio along with an image of the class space:
-![About page](static/images/readme/about.png)
-![Studio image](static/images/readme/studio-pic-min.png)
 
-- The class schedule page displays the classes available and their specific times as well as the class descriptions so the user knows what to expect from a class:
-![Class schedule](static/images/readme/class-schedule.png)
-![Class descriptions](static/images/readme/class-descriptions.png)
+# Features
 
-- The contact page provides visitors and/or users of the site to submit their information to make a query to the business. The form also allows the user to choose a specific class they are querying, if desired:
-![Contact form](static/images/readme/contact1.png)
-![Contact class dropdown](static/images/readme/contact2.png)
+## 1. Booking Management
+Effortlessly handle room reservations, check-ins, and check-outs with our intuitive booking management system. From single bookings to group reservations, streamline the entire process for maximum efficiency.
 
-- If a site visitor attempts to book a class from clicking on 'Booking' in the navbar, it will request that they either register a new account or sign in with an existing account:
-![Booking error](static/images/readme/booking-not-logged-in.png)
-![Register](static/images/readme/register.png)
-![Sign in](static/images/readme/sign-in.png)
+## 2. Inventory Control
+Maintain full control over your hotel's inventory, including room availability, rates, and special packages. Easily adjust pricing, manage room allocations, and track inventory in real-time.
 
-- When a user is logged in, the navbar options change to allow bookings and view their member profile page:
-![Logged in navbar](static/images/readme/user-logged-in-navbar.png)
+## 3. Guest Relations
+Deliver exceptional guest service with personalized experiences tailored to individual preferences. Access guest profiles, manage special requests, and gather valuable feedback to enhance guest satisfaction.
 
-- When logged in the Booking page allows the user to choose a specific class date & time to book a class:
-![Booking page](static/images/readme/booking-page.png)
+## 4. Financial Tracking
+Stay on top of your hotel's financial health with comprehensive financial tracking tools. Monitor revenue, expenses, and billing transactions to ensure accurate accounting and financial management.
 
-- When logged in the user can visit the member profile page to view and cancel their booked classes as well as view and update their personal details:
-![Member profile](static/images/readme/member-profile.png)
+## 5. Admin Dashboard
+Access a centralized dashboard with insightful analytics, reports, and administrative tools. Gain valuable insights into occupancy rates, revenue trends, and guest demographics to inform strategic decision-making.
 
-- When logged in the user has to option to logout:
-![Logout](static/images/readme/logout.png)
+## 6. Customization Options
+Tailor the system to your hotel's unique requirements with flexible customization options. From branding and theme customization to configuring user permissions, adapt the system to suit your specific needs.
 
-- The footer is consistent throughout the entire site and allows the user to visit the studio's social media platforms. There are currently no social media sites set up or connected for this business.
-![Footer](static/images/readme/footer.png)
+## 7. Security Measures
+Ensure the security of guest data and sensitive information with robust security measures. Implement encryption, access controls, and regular security audits to protect against potential threats.
 
-- The admin site is fully functional for the site owner to navigate through contact requests, member/user details, and class & booking details:
-![Admin dashboard](static/images/readme/admin.png)
+## 8. Mobile Compatibility
+Access key features of the system on the go with mobile compatibility. Whether on a smartphone or tablet, stay connected and manage hotel operations from anywhere, at any time.
 
-## Future Features
 
-- In future I plan to implement a 'table of contents' for README files of this length.
-
-- In future implementations, the admin will have the ability to send class reminder emails to all members with upcoming bookings.
-
-- A gallery page will be implemented to provide the user with more understanding of the studio.
-
-- The location of the studio will be displayed with a Google map view on the site's home page.
-
-- As a future enhancement, and as the studio begins to grow, class bookings will be limited by the capacity of members each class is able to hold.
-
-- In future enhancements, I plan to implement a confirmation step to confirm a class booking before the user can fully cancel a class.
-
-- In future implementations, the user will have the option to delete their account/profile. Currently, the user must contact the studio to cancel their account.
 
 # Testing
 
-## Validator Testing:
-
-- CI Python Linter: Each python file for all apps were run through the python linter. There were a few lines exceeding the line limit and those are documented in my 'Bugs'. Otherwise, everything passed with no errors. 
-![CI Python Linter](static/images/readme/ci-python-linter.png)
-
-- JSHint: No JavaScript was needed for the implementation of the current features in this project.
-
-- W3C CSS Validator: No issues were found in the CSS validator.
-![W3C CSS Validator](static/images/readme/w3c-css.png)
-
-- W3C Markup Validation: 
-(Unfixed Bug) After fixing the issues the W3C Markup Validator was showing, I re-deployed and ran into the same errors. The warning is how I ensured there is no horizontal scrolling on smaller devices and it works perfectly. I don't have any `li's in my .html documents that are direct children of divs. After running out of time to submit, I was not able to solve these errors.
-![W3C Markup](static/images/readme/w3c-markup.png)
-No major issues were found when testing the source code of the authorized user pages.
-![HTML Authorized User pages](static/images/readme/html-authorised-pages.png)
-
-- Lighthouse: 
-(Unfixed Bug) Unfortunately, I have errors in the Lighthouse report that I ran out of time to look into to see why the errors occurred. I am thinking this might have to do with Django as I have never run into issues with a Lighthouse report in past projects.
-![Lighthouse Report](static/images/readme/lighthouse.png)
-
 ## Manual Testing:
 
-Testing the Home page & Class Schedule page:
-- Both these pages are purely made up of HTML & CSS and work well on all device sizes. I found no issues when adjusting the width of the screen size in the browser's Dev Tools.
+### Functional Testing
+ - Booking Process: Manually test the booking process to ensure that guests can make reservations smoothly, and staff can manage bookings effectively.
+ - User Authentication: Verify that user authentication mechanisms, such as login and registration, function correctly and securely.
+ - Room Management: Test the functionalities related to room management, including adding, editing, and deleting rooms.
+ - Guest Services: Validate that guest services, such as room service requests and housekeeping, are working as expected.
+### Usability Testing
+ - User Interface: Evaluate the user interface for intuitiveness, clarity, and consistency, ensuring that users can navigate the system with ease.
+ - Accessibility: Test the system's accessibility features to ensure compliance with accessibility standards and accommodate users with disabilities.
+ - Error Handling: Assess how the system handles errors and edge cases, providing informative error messages and guiding users to resolve issues.
 
-Testing the contact form:
-- This was tested by submitting a contact request. When attempting to submit the form without the *required fields, the user is unable to submit and receives a request to fill in the missing, required field.
-- The contact form works correctly for both logged in users as well as visitors who are not logged in.
-- The admin site is updated correctly with the required fields and optional fields, when completed. All contact request details are stored in the admin dashboard under Contact Requests in the Contact section.
-
-Testing user login & logout:
-- When a user logs out, they are automatically redirected to the home page. This applies for both site users as well as superusers.
-- When a user logs into their previously created account, they are automatically redirected to the home page. From here the user can easily navigate the site to book a class, see their profile page or find out more about the studio from the navbar.
-- I found no way to book a class without being a logged in user.
-- The contact form works whether the user is logged in or not.
-
-Testing functionality of booking & canceling a class:
-- I tested trying to book a class when not logged in as a registered user and it correcly brings you to the option to login or register a new account.
-- As a logged in user, the booking is successful when a correct class day and time are chosen.
-- Upen successful bookings, a success message appears.
-- If the class date or time is incorrect, an error message is shown to the user.
-- All bookings and relevant details work correctly when viewing bookings on the admin dashboard.
-- CRUD functionality has been implemented and works on all aspects of the users side. The user can successfully cancel a class booking that has already boon booked and appears on the member's profile page. The cancelations are immediately reflected on the admin dashboard and I could not find a way to break this.
-
-Testing the layout & spacing:
-- The site looks well on all device sizes thanks to Bootstrap. This was tested using the browser's Dev Tools.
-
-Testing navbar & footer links:
-- The menu navbar's layout works well on all screen sizes and shrinks to a functional, collapsible menu dropdown on small devices.
-- All links in the navbar direct the user to the correct page.
-- The footer's social media links all work and open the respected social media site in a new tab for better user experience.
-
-Testing the admin dashboard:
-- The superuser is able to view all models with the correct details in each. 
-- The logged in admin is able to create, view and delete, bookings, users & user profiles, contact requests and class details.
-- I was unable to access the admin dashboard without proper superuser login credentials.
+### Compatibility Testing
+ - Browser Compatibility: Test the system across different web browsers (e.g., Chrome, Firefox, Safari) to ensure consistent functionality and appearance.
+ - Device Compatibility: Validate the system's performance on various devices, including desktops, laptops, tablets, and smartphones, to accommodate users across different platforms.
 
 ## Bugs/Unfixed Bugs:
 - Fixed: When creating my apps, I decided I needed to separate my models for member details from the class details and booking models in a separate app. I changed the name of my original 'book' app to 'member' as this already contained my Member and MemberLogin models that had been migrated to the database and deployed on Heroku. I followed the steps and successfully changed the name of the app by utilizing the [django-rename-app](https://github.com/odwyersoftware/django-rename-app?tab=readme-ov-file).
@@ -171,77 +95,55 @@ Testing the admin dashboard:
 # Deployment
 
 ## Steps taken to deploy on Heroku:
-Set up the workspace:
-1. Install gunicorn in workspace for Heroku deployment
-2. Add to requirements.txt and create Procfile
-3. In settings.py set DEBUG = False
-4. Git add, commit and push changes to GitHub
-Deploy on Heroku:
-5. Create the app on Heroku and connect to GitHub project
-6. Set the Config Vars in the "Settings" Tab
-7. Navigate to the "Deploy" tab and scroll down to click on "Deploy Branch" in the "Manual deploy" section
 
-## Fork Repository
+### Set up the workspace:
 
-Forking a repository allows you to create a copy to GitHub, and any changes made will not affect the original repository:
+ - Install gunicorn: Gunicorn is a Python WSGI HTTP Server for UNIX, required for Heroku deployment. Install it in your workspace using pip install gunicorn.
+ - Update requirements.txt and create Procfile: Ensure that gunicorn is added to your requirements.txt file. Create a Procfile in the root directory of your project and add the following line: web: gunicorn <hotel_management>.wsgi --log-file -.
+ - Set DEBUG to False: In your Django project's settings.py, set DEBUG = False to ensure that your application runs in production mode.
+ - Git add, commit and push changes to GitHub: Add any changes you've made, commit them, and push them to your GitHub repository.
 
-- Within GitHub, navigate to the repository page you are going to fork
-- Click "Fork" on the top right corner of the page
-- Wait for the copy to be created and you are then redirected to the forked repository
+### Deploy on Heroku:
+
+ - Create the app on Heroku and connect to GitHub project: Log in to your Heroku account, navigate to the dashboard, and create a new app. Connect your Heroku app to your GitHub repository under the "Deploy" tab.
+ - Set Config Vars in the "Settings" Tab: Go to the "Settings" tab of your Heroku app. Under the "Config Vars" section, set any necessary environment variables required for your Django application, such as SECRET_KEY, DATABASE_URL.
+ - Deploy the app: Navigate to the "Deploy" tab on your Heroku dashboard. Scroll down to the "Manual deploy" section and click on "Deploy Branch". Heroku will then fetch the latest code from your GitHub repository and start the deployment process.
+ - Verify deployment: Once the deployment process is complete, Heroku will provide you with a URL where your application is now live. You can visit this URL to verify that your Django application is running correctly on Heroku.
+
 
 ## Clone Repository
 
-Cloning a repository allows you to create a local copy of a repository on your machine:
+Cloning a repository allows you to create a local copy of it on your machine:
 
-- Within GitHub, navigate to the repository you are wanting to clone
-- Click the green "<>Code" button
-- Within the "Local" tab, copy the HTTPS url
-- In your IDE, open Git Bash and type in 'git clone' followed by the pasted url just copied from GitHub. Ex: git clone https://example.com/repository/project
-- The clone has been created on your local machine
+ - Within GitLab, navigate to the repository you want to clone.
+ - Look for the "Clone" button, usually located on the right side of the repository page.
+ - Click the "Clone" button and copy the HTTPS or SSH URL provided.
+ - In your terminal or Git Bash, navigate to the directory where you want to clone the repository.
+ - Type 'git clone' followed by the URL you copied from GitLab. For example:
+    git clone https://gitlab.com/username/repository.git
+ - If you're using SSH, you'd use an SSH URL instead.
+ - Press Enter. Git will clone the repository onto your local machine.
+ - You may be prompted to enter your GitLab credentials if you haven't authenticated previously.
+ - Once the clone process is complete, you'll have a local copy of the repository in the directory you specified.
 
 # Credits
-- Student support on Slack was very helpful setting up database configurations in the settings.py file.
 
-- [Creating a Database](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSD101_WTS+2023_Q3/courseware/56a2da0940b4411d8a38c2b093a22c60/ed8c75412c784bbba17988f7efbe037b/?child=first) content in the "I Think Therefore I Blog" walkthrough was utilized to create the database. 
+### Code
+ - To help me get started with the project and understand the basics, i followed Code Institute and Matt´s Walktrough on "I Think therefore i Blog", big thanks for getting me started.
 
-- From the 'I think therefore I blog' walkthrough project, [Django Walkthrough Project / Setting up the base template](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSD101_WTS+2023_Q3/courseware/56a2da0940b4411d8a38c2b093a22c60/c592ed45498e440587b764e29891b2fc/?child=first) was helpful when creating the base template.
+ - Ed, Ger and Oisin, Tutors at Code Institute helped me solve some bugs in my code, big thanks.
 
-- [Django Documentation](https://docs.djangoproject.com/en/5.0/)
+### Bootstrap
+ - Bootstrap has an amazing library and has helped me focus on the backend and save a lot of time with style, and layout on the frontend.
 
-- From the 'I think therefore I blog' walkthrough project, [Deployment with static files](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSD101_WTS+2023_Q3/courseware/56a2da0940b4411d8a38c2b093a22c60/c592ed45498e440587b764e29891b2fc/?child=first) was utilized to ensure successful deployment after creating static files.
+### Django
+ - The generic views from Django made my life much easier, also great documentation.
 
-- From the 'I think therefore I blog' walkthrough project, [Django AllAuth Authentication](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSD101_WTS+2023_Q3/courseware/56a2da0940b4411d8a38c2b093a22c60/8354ed2193944d4ea9aa167849113da7/) and [Django Documentation](https://docs.allauth.org/en/latest/installation/quickstart.html) were used to install and wire up Django AllAuth. 
+### Issues with code
+ - Most of the daily problems were solved thanks to Stackoverflow and W3Schools.
 
-- [Django debug log](https://docs.djangoproject.com/en/5.0/topics/logging/#id5) was provided by tutor support to assist with finding specific issues in code. This was removed for deployment.
-
-- [Django Views URL Names](https://docs.allauth.org/en/latest/account/views.html#login) were found here, with the help of tutor support, to reference Django account files within custom templates.
-
-- Understanding the Django User Model was found [here](https://docs.djangoproject.com/en/5.0/ref/contrib/auth/#django.contrib.auth.models.User).
-
-- The use of Django signals, specifically the 'post_save' signal was implemented with the idea from [Medium.com](https://medium.com/@abdullafajal/automating-user-profile-creation-with-default-data-using-django-signals-50abef9ce529) and assistance from [Django Signal Documentation](https://docs.djangoproject.com/en/5.0/ref/signals/).
-
-- Understanding Django Forms was referenced using [this documentation](https://docs.djangoproject.com/en/5.0/topics/forms/) as well as from [creating model forms documentation](https://docs.djangoproject.com/en/5.0/topics/forms/modelforms/). Implementing cleaned_data was learned through [Django documentation](https://docs.djangoproject.com/en/5.0/ref/forms/validation/#:~:text=The%20clean()%20method%20on,and%20that%20error%20is%20raised.).
-
-- Understanding the use of super() and __init __ came from [hubspot](https://blog.hubspot.com/website/python-super), [stack overflow](https://stackoverflow.com/questions/576169/understanding-python-super-with-init-methods) and [sentry](https://sentry.io/answers/super-and-init-in-python/#:~:text=__init__%20with%20Product,dependency%20injection%20and%20multiple%20inheritance.&text=This%20is%20equivalent%20to%20calling%20super()%20in%20Python%203.).
-
-- Customizing the User profile in the admin dashboard was learned from [Customizing authentication in Django](https://docs.djangoproject.com/en/dev/topics/auth/customizing/).
-
-- Implementing Bootstrap's pop-up modal came from this [Bootstrap Components Documentation](https://getbootstrap.com/docs/4.6/components/modal/).
-
-- The ideaology of implementing the booking form's DateTimePicker came from [Django-Bootstrap-Datepicker-Plus](https://django-bootstrap-datepicker-plus.readthedocs.io/en/latest/customization.html). This wasn't rendering properly, so with the help of [this example](https://github.com/GJSayers/hobo-hatch-b2b/blob/main/checkout/forms.py) from tutor support, along with [letscodemore.com](https://www.letscodemore.com/blog/how-to-add-date-input-widget-in-django-forms/), I was able to implement DateInput & TimeInput.
-
-- Figuring out how to cancel a booked class was referenced from the 'I think therefore I blog' walkthrough video for [Editing and deleting records](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FSD101_WTS+2023_Q3/courseware/56a2da0940b4411d8a38c2b093a22c60/24613de4bafc4032882cc1b8799bd4f0/). I also received great feedback from Daisy on Slack to get it working properly.
-
-- Assistance with defining UserProfileInline to include UserProfile fields in the User admin
-[source](https://docs.djangoproject.com/en/dev/topics/auth/customizing/) & assistance from Tutor Support.
-
-- Implementing the signals.py file was sourced from [here](https://medium.com/@abdullafajal/automating-user-profile-creation-with-default-data-using-django-signals-50abef9ce529) in order to create a user profile for each new user.
-
-### Content
-- The content for this site came directly from Soul Base Pilates Studio. This is my sister's pilates studio based in Iowa, USA.
 
 ### Technologies Used
-- LucidChart = ERD
 - Figma = Wireframes
 - Django = Framework
 - HTML = mark up language
@@ -252,17 +154,17 @@ Cloning a repository allows you to create a local copy of a repository on your m
 - Heroku = Deployment
 - GitHub = Used to store the project
 - Git = version control
-- [PostgresSQL from Code Institute](https://dbs.ci-dbs.net/) = Production database 
+- ElephantSQL
 - [TinyPNG](https://tinypng.com/) used to compress images
-- [Favicon generator](https://gauger.io/fonticon/) to create the favicon
-- [Am I Responsive](https://ui.dev/amiresponsive) = multiple screen size views
 
-### Media & Layout
+# Acknowledgment
+We would like to express our gratitude to the following individuals and organizations for their invaluable contributions to the development and success of our Django Hotel Management System:
 
-- The media for this project was provided directly by Soul Base Pilates Studio.
+ - Open Source Community: We are indebted to the vibrant open-source community for their continuous support, inspiration, and contributions to the Django framework and related technologies.
+ - Django Developers: Our heartfelt thanks to the developers of Django for creating a powerful, flexible, and scalable web framework that serves as the foundation for our hotel management system.
+ - Contributors: A special acknowledgment to all the contributors who have dedicated their time, expertise, and effort to enhance the functionality, usability, and reliability of our system through code contributions, bug reports, and feature suggestions.
+ - Beta Testers: We extend our appreciation to the beta testers who volunteered to test early versions of the system, providing valuable feedback and insights that helped us identify and address issues before the official release.
+ - Stack Overflow Community: We are grateful to the Stack Overflow community for providing invaluable assistance and solutions to technical challenges encountered during the development process.
+ - Documentation Contributors: Our thanks to those who have contributed to the documentation efforts, helping to create clear, comprehensive, and user-friendly guides for installation, usage, and troubleshooting.
 
-## Acknowledgements
-
-- I would like to thank my mentor, Narender, for his great support and advice throughout this project. 
-- I would like to thank tutor support and the community on Slack for their assistance in understanding the different aspects of this project. 
-- I would also like to thank my sister, Sydney, for providing the material for the project from her new business, Soul Base Pilates Studio!
+We deeply appreciate the collective effort and collaboration that have made our Django Hotel Management System possible. Your support and contributions are truly appreciated!

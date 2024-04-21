@@ -26,9 +26,8 @@ Welcome to our comprehensive Django Hotel Management System! We're thrilled to h
 - Convenient Access
   Our system offers guests convenient access to essential information and services, such as room availability, amenities, and local attractions. With a user-friendly interface, guests can easily navigate and make the most of their stay.
 
-
-
-
+## Home Page
+![Screenshot 2024-04-22 025143](https://github.com/KadDenuwara/HMS/assets/137709290/11954c3b-012f-4147-99da-80a75d6646f1)
 
 # Features
 

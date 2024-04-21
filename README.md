@@ -76,22 +76,6 @@ Access key features of the system on the go with mobile compatibility. Whether o
  - Browser Compatibility: Test the system across different web browsers (e.g., Chrome, Firefox, Safari) to ensure consistent functionality and appearance.
  - Device Compatibility: Validate the system's performance on various devices, including desktops, laptops, tablets, and smartphones, to accommodate users across different platforms.
 
-## Bugs/Unfixed Bugs:
-- Fixed: When creating my apps, I decided I needed to separate my models for member details from the class details and booking models in a separate app. I changed the name of my original 'book' app to 'member' as this already contained my Member and MemberLogin models that had been migrated to the database and deployed on Heroku. I followed the steps and successfully changed the name of the app by utilizing the [django-rename-app](https://github.com/odwyersoftware/django-rename-app?tab=readme-ov-file).
-
-- Fixed: When implementing Django signals into the "member" app when trying to create a user profile for each user that signs up, I received the following error: django.core.exceptions.ImproperlyConfigured: Application labels aren't unique, duplicates: member . After researching, I was able to fix the problem my removing the 'member' in INSTALLED_APPS of the Settings file. This was found using [Stack Overflow](https://stackoverflow.com/questions/24319558/how-to-resolve-django-core-exceptions-improperlyconfigured-application-labels).
-
-- Fixed: I ran into a bug when trying to implement the class cancellation function. Daisy helped debug and I now understand that Django provides built-in primary keys, where I had overidden the automatic PK with booking_id. Once I implemented the correct key into the code, it works well.
-
-- Unfixed: When testing my .py files with the CI Python Linter, this line was proven to be too long. However, even after adding parentheses and entering to the next line and trying multiple options, I was unable to fix the result 'continuation line with same indent as next logical line': 
-    if selected_datetime.strftime('%A %H:%M') not in available_options[booked_class.class_name]:   
-
-    The same issue occured with this path, however I was unable to fix and feared ruining my url path:
-        path('cancel/booking/<int:booking_id>/', cancel_booking, name='cancel_booking'),
-
-    Same issue with this line:
-        return f"{self.member} booked {self.booked_class} on {self.class_date} beginning at {self.class_time}."
-
 # Deployment
 
 ## Steps taken to deploy on Heroku:

@@ -56,11 +56,13 @@
                         <nav id="navigation" class="style_one">
                             <ul id="responsive">
                                 <li><a class="current" href="{% url 'hotel:index' %}">Home</a></li>
-                                <li><a href="#">Account</a>
-                                    <ul>
-                                        <li><a href="{% url 'dashboard:dashboard' %}">Dashboard</a></li>
-                                    </ul>
-                                </li>
+				{% if request.user.is_authenticated %}
+	                                <li><a href="#">Account</a>
+	                                    <ul>
+	                                        <li><a href="{% url 'dashboard:dashboard' %}">Dashboard</a></li>
+	                                    </ul>
+	                                </li>
+				{% endif %}
                             </ul>
                         </nav>
                         <div class="clearfix"></div>
@@ -72,7 +74,7 @@
                                 
                                 <a href="{% url 'hotel:selected_rooms' %}" class="button border sign-in "><i class="fas fa-bed"></i><span class="room-count">{{ total_selected_items }}</span></a>     
                                 <a href="{% url 'userauths:sign-out' %}" class="button border with-icon"><i class="bi bi-power"></i>Sign Out</a>
-                                <a href="{% url 'dashboard:dashboard' %}" class="button border sign-in "><i class="bi bi-grid"></i>Dashboard</a>
+                                <!--<a href="{% url 'dashboard:dashboard' %}" class="button border sign-in "><i class="bi bi-grid"></i>Dashboard</a>-->
                             {% else %}
                                 <a href="{% url 'hotel:selected_rooms' %}" class="button border sign-in "><i class="fas fa-bed"></i><span class="room-count">{{ total_selected_items }}</span></a> 
                                 <a href="{% url 'userauths:sign-in' %}" class="button border sign-in "><i class="fa fa-sign-in"></i> Sign In</a>
@@ -178,10 +180,11 @@
                 <div class="col-md-2 col-sm-3 col-xs-6">
                     <h4>Useful Links</h4>
                     <ul class="social_footer_link">
-                        <li><a href="">Home</a></li>
+                        <li><a href="{% url 'hotel:index' %}">Home</a></li>
                     </ul>
                     </div>
-                    <!---<div class="col-md-2 col-sm-3 col-xs-6">
+		{% if request.user.is_authenticated %}
+                    <div class="col-md-2 col-sm-3 col-xs-6">
                         <h4>My Account</h4>
                         <ul class="social_footer_link">
                             <li><a href="/dashboard/">Dashboard</a></li>
@@ -189,7 +192,8 @@
                             <li><a href="/dashboard/bookings/">My Listing</a></li>
                             <li><a href="/dashboard/bookmark/">Favorites</a></li>
                         </ul>
-                    </div>-->
+                    </div>
+		{% endif %}
                 <div class="col-md-2 col-sm-3 col-xs-6">
                     <h4>Help</h4>
                     <ul class="social_footer_link">

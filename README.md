@@ -41,7 +41,7 @@ Welcome to our comprehensive Django Hotel Management System! We're thrilled to h
 ## User Dashboard
 ![Screenshot 2024-04-22 025339](https://github.com/KadDenuwara/HMS/assets/137709290/818f5701-fd2d-496a-ae1f-f27f1b80535b)
 
-## AboutUs Pas
+## AboutUs Page
 ![Screenshot 2024-04-22 025243](https://github.com/KadDenuwara/HMS/assets/137709290/dafa39cd-55b5-4c76-9028-4fc0192e0c59)
 
 ## Footer Links & Our Social Media Links
